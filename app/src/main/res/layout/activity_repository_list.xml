@@ -7,10 +7,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.xavier.spikedroid.MainActivity">
+    tools:context="com.xavier.spikedroid.githubrepositories.RepositoryListActivity">
 
-    <ListView
-        android:id="@+id/spike_list"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:text="Toto"/>
 </RelativeLayout>
