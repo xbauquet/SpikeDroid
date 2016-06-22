@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.xavier.spikedroid.MainActivity;
 import com.xavier.spikedroid.R;
 import com.xavier.spikedroid.githubrepositories.RepositoryListActivity;
+import com.xavier.spikedroid.googlemaps.GoogleMapsActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +26,7 @@ public class SpikeListAdaptor extends BaseAdapter {
     public SpikeListAdaptor(Context context){
         this.context = context;
         this.spikes.add(new Spike("GitHub Repositories", new Intent(context, RepositoryListActivity.class)));
+        this.spikes.add(new Spike("Google maps", new Intent(context, GoogleMapsActivity.class)));
     }
 
     @Override
