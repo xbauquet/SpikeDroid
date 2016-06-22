@@ -25,7 +25,11 @@ dependencies {
 
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
+    // Retrofit
     compile 'com.squareup.retrofit2:retrofit:2.0.0'
     compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    // Google
     compile 'com.google.android.gms:play-services:8.4.0'
+    // Toggle button library
+    compile 'org.honorato.multistatetogglebutton:multistatetogglebutton:0.2.1'
 }

@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">SpikeDroid</string>
     <string name="title_activity_google_maps">Map</string>
+
+    <string-array name="googlemap_toggle_buttons_array">
+        <item>Map</item>
+        <item>Hybrid</item>
+        <item>Satelite</item>
+    </string-array>
 </resources>
