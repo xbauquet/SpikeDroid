@@ -7,10 +7,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.xavier.spikedroid.githubrepositories.RepositoryListActivity">
+    tools:context="com.xavier.spikedroid.githubrepositories.RepositoryDetailActivity">
 
-    <ListView
-        android:id="@+id/repository_list"
+    <TextView
+        android:id="@+id/repository_detail_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
 </RelativeLayout>
