@@ -1,5 +1,6 @@
 package com.xavier.spikedroid;
 
+import android.os.Build;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.widget.ListView;
 
 import com.xavier.spikedroid.main.Spike;
 import com.xavier.spikedroid.main.SpikeListAdaptor;
+import com.xavier.spikedroid.util.PermissionsProvider;
 
 import java.util.List;
 
@@ -25,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        // Ask for permissions needed to use the map:
+        // ACCESS_FINE_LOCATION
+        // WRITE_EXTERNAL_STORAGE
+        if (Build.VERSION.SDK_INT >= 23) {
+            PermissionsProvider permissionsProvider = new PermissionsProvider(this);
+            permissionsProvider.checkPermissions();
+        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
