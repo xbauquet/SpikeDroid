@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -27,14 +27,17 @@
             android:exported="false" />
 
         <activity android:name=".githubrepositories.RepositoryDetailActivity" />
-       <!-- Google map api key-->
+        <!-- Google map api key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
             android:name=".googlemaps.GoogleMapsActivity"
-            android:label="@string/title_activity_google_maps"/>
+            android:label="@string/title_activity_google_maps" />
+        <activity android:name=".googleplaces.GooglePlacesActivity" />
+        <activity android:name=".searchlocation.SearchLocation" />
+
     </application>
 
 </manifest>
